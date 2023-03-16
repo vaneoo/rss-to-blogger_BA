@@ -33,7 +33,7 @@ function publishPosts(posts) {
 
 function fetchPosts() {
   gapi.client.setApiKey('AIzaSyCnbPS_ITSJVc3IDpeFY1kUr2kmwDNcEko');
-  getFeed('https://rss.app/feeds/eMCOUmP37tGNDhiL.xml', function(response) {
+  getFeed('https://politepol.com/fd/dlEZNZrhanSs', function(response) {
     var posts = response.items;
     publishPosts(posts);
   });
