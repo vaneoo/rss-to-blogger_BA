@@ -1,3 +1,4 @@
+<script>
 function getFeed(url, callback) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(url), true);
@@ -38,3 +39,4 @@ function fetchPosts() {
     publishPosts(posts);
   });
 }
+</script>
